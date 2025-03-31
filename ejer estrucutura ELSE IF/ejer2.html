@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let temperatura = prompt("Introduce la temperatura en grados Celsius:");
+
+        temperatura = Number(temperatura);
+
+        if (temperatura < 0) {
+            document.write("Temperatura: " + temperatura + "°C - Frío");
+        } else if (temperatura >= 0 && temperatura <= 15) {
+            document.write("Temperatura: " + temperatura + "°C - Fresco");
+        } else if (temperatura >= 16 && temperatura <= 25) {
+            document.write("Temperatura: " + temperatura + "°C - Templado");
+        } else if (temperatura > 25) {
+            document.write("Temperatura: " + temperatura + "°C - Caliente");
+        } else {
+            document.write("Entrada no válida. Por favor, ingrese un número.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Definir la contraseña correcta
+        const contraseñaCorrecta = "Lola9812";  // Puedes cambiarla por la contraseña que desees.
+
+        // Solicitar al usuario que ingrese la contraseña
+        let contraseñaIngresada = prompt("Introduce la contraseña:");
+
+        // Usar el operador ternario para verificar si la contraseña es correcta
+        let mensaje = (contraseñaIngresada === contraseñaCorrecta) ? "Contraseña correcta." : "Contraseña incorrecta.";
+
+        // Mostrar el mensaje
+        document.write(mensaje);
+    </script>
+</body>
+</html>
